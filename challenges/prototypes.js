@@ -10,6 +10,7 @@ function CuboidMaker(cbProps) {
   this.width = cbProps.width;
   this.height = cbProps.height; 
   this.volume = cbProps.volume;
+  this.dimensions = cbProps.dimensions;
 }
 
 
@@ -20,7 +21,7 @@ function CuboidMaker(cbProps) {
   Formula for cuboid volume: length * width * height
 */
 CuboidMaker.prototype.volume = function () {
-  this.length * this.width * this.height;
+  volume = this.length * this.width * this.height;
 }
 
 
@@ -36,7 +37,7 @@ CuboidMaker.prototype.volume = function () {
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 const cuboid = new CuboidMaker ({
-  cbProps: {
+  dimensions: {
     length: 4,
     width: 5,
     height: 5
